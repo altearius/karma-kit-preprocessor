@@ -4,14 +4,16 @@ function createKitPreprocessor(logger) {
 	const log = logger.create("preprocessor.kit");
 
 	return function (_, file, done) {
-		log.debug(`Processing "${file.originalPath}".`);
+		log.debug("Processing", file.originalPath);
 
 		let html;
 
 		try {
 			html = kit(file.originalPath);
 		} catch (e) {
-			log.error("Unable to compile kit file");
+			log.error("Unable to compile", file.originalPath);
+			log.error(e.message);
+
 			return done(e, null);
 		}
 
