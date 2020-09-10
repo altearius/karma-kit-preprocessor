@@ -1,0 +1,12 @@
+{
+	"editor.formatOnSave": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"javascript.preferences.quoteStyle": "double",
+	"grunt.autoDetect": "off",
+	"jake.autoDetect": "off",
+	"typescript.tsc.autoDetect": "off",
+	"npm.autoDetect": "off",
+	"npm.packageManager": "yarn"
+}
