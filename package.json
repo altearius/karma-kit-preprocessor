@@ -6,6 +6,9 @@
   "author": "Chris Nielsen <nielsen.chris@gmail.com>",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/altearius/karma-kit-preprocessor",
+  "bugs": "https://github.com/altearius/karma-kit-preprocessor/issues",
+  "repository": "github:altearius/karma-kit-preprocessor",
   "keywords": [
     "karma-plugin",
     "karma-preprocessor",
