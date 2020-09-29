@@ -1,6 +1,6 @@
 {
   "name": "karma-kit-preprocessor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Karma plugin. Compile kit files on the fly.",
   "main": "index.js",
   "author": "Chris Nielsen <nielsen.chris@gmail.com>",
