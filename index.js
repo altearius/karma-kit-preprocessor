@@ -11,8 +11,8 @@ function createKitPreprocessor(logger) {
 		try {
 			html = kit(file.originalPath);
 		} catch (e) {
-			log.error("Unable to compile", file.originalPath);
-			log.error(e.message);
+			log.warn("Unable to compile", file.originalPath);
+			log.warn(e.message);
 
 			return done(e, null);
 		}
