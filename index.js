@@ -3,7 +3,7 @@ const kit = require("node-kit");
 function createKitPreprocessor(logger) {
 	const log = logger.create("preprocessor.kit");
 
-	return function (_, file, done) {
+	return function (content, file, next) {
 		log.debug("Processing", file.originalPath);
 
 		let html;
@@ -14,10 +14,10 @@ function createKitPreprocessor(logger) {
 			log.warn("Unable to compile", file.originalPath);
 			log.warn(e.message);
 
-			return done(e, null);
+			return next(null, content);
 		}
 
-		done(null, html);
+		next(null, html);
 	};
 }
 
